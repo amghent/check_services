@@ -1,0 +1,17 @@
+---
+
+name: check_services
+version: 1.0.0
+
+mail:
+  server: mail.sidmar.be
+  port: 25
+  subject: One or more services are not running
+  text: There are one or more services not running on machine
+  list_text: Service(s) not running
+  from: check_services@arcelormittal.com
+  to: yves.vindevogel.external@arcelormittal.com
+
+services:
+  - Browser
+  - ConsentUxUserSvc_37d806
